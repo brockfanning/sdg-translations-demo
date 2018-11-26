@@ -1,0 +1,8 @@
+---
+permalink: /fr/peace-and-justice-strong-institutions/
+language: fr
+sdg_goal: '16'
+color: '#00689d'
+layout: goal
+---
+
