@@ -8,12 +8,12 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: test-dependencies-{{ checksum "Gemfile.lock" }}
+          key: test-dependencies-{{ checksum "Gemfile" }}
       - run:
           name: Install Ruby dependencies
           command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
       - save_cache:
-          key: test-dependencies-{{ checksum "Gemfile.lock" }}
+          key: test-dependencies-{{ checksum "Gemfile" }}
           paths:
             - vendor/bundle
       - run:
