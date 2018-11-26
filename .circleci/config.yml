@@ -21,7 +21,7 @@ jobs:
           command: bundle exec jekyll build
       - add_ssh_keys:
           fingerprints:
-            - "a6:3a:21:08:58:47:81:5f:a8:b9:13:51:4f:d1:b3:eb"
+            - "5f:cb:30:b3:a3:0c:c0:77:18:a9:38:81:2a:f2:0d:4c"
       - run:
           name: Deploy to Github
           command: bash scripts/deploy/circleci/deploy.sh
