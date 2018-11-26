@@ -92,6 +92,9 @@ languages:
   - en
   - es
   - fr
+  - zh
+  - ru
+  - ar
 
 # This makes sure that all pages have a language.
 defaults:
