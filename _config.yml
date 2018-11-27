@@ -57,8 +57,8 @@ exclude: [vendor, scripts, remotedata]
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Global
-  adjective: Global
+  name: CODE
+  adjective: CODE
 
 # Pages
 collections:
