@@ -43,8 +43,8 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css">
-        <link rel="stylesheet" href="/sdg-translations-demo/assets/css/default.css?v=20181127055836">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"><link rel="stylesheet" href="/sdg-translations-demo/assets/css/custom.css?v=20181127055836"></head>
+        <link rel="stylesheet" href="/sdg-translations-demo/assets/css/default.css?v=20181127133122">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"><link rel="stylesheet" href="/sdg-translations-demo/assets/css/custom.css?v=20181127133122"></head>
 <body class="language-zh">
 <!-- <div class="container"> -->
 
@@ -52,8 +52,9 @@
 <div id="disclaimer">
   <div class="container">
   <div class="alert alert-danger" role="alert">
-    <strong class="phase-tag"></strong>
-    
+    This is a demo of translations from the
+    <a href="https://opendataenterprise.github.io/sdg-translations">SDG Translations</a>
+    project. All data included here is for testing purposes only.
   </div>
 </div>
 
@@ -203,7 +204,9 @@
   <div class="row" id="page-content-row">
     <div class="col-xs-12">
       <div id="page-content">
-  
+  <p>Data follows the UN specification for this indicator and has been identified in collaboration with topic experts. Data availability within the UK is limited to United Kingdom for this indicator.</p>
+
+<p>The Sustainable Development Goals is a collaborative project, if you have any feedback or suggestions for data please contact us at <a href="mailto:SustainableDevelopment@ons.gov.uk">SustainableDevelopment@ons.gov.uk</a></p>
 
 </div>
 
@@ -212,20 +215,119 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <h2></h2>
+      <h2>Annual mean levels of fine particulate matter (PM2.5 and PM10) in towns and cities (population weighted)</h2>
     </div>
   </div>
 
-  <div class="row" id="indicatorData" data-indicatorid='indicator_11-6-2' data-id="11-6-2" data-country=""
-  data-charttitle="" data-measurementunit="" data-datasource="" data-geographicalarea="" data-footnote="" data-showdata="false" data-graphtype="line" data-geocoderegex="" data-showmap="">
+  <div class="row" id="indicatorData" data-indicatorid='indicator_11-6-2' data-id="11-6-2" data-country="UK"
+  data-charttitle="Annual mean levels of fine particulate matter (PM2.5 and PM10) in towns and cities (population weighted)" data-measurementunit="Annual mean (ug/m3)" data-datasource="World Health Organisation (WHO)" data-geographicalarea="UK" data-footnote="City-level data sourced from the European Environment Agency (Air quality e-reporting database) and complied by the Global Health Observatory (GHO). Country-level (headline) values sourced from the GHO." data-showdata="true" data-graphtype="line" data-geocoderegex="" data-showmap="true">
     
-    <div class="col-md-12">
+    <div class="col-md-3">
+      <div id="toolbar">
+        <span id="series-help">
+          <h4></h4>
+          <p></p>
+        </span>
+        <p></p>
+        <div id="fields">
+          <p class="async-loading" data-img="/sdg-translations-demo/assets/img/loading-small.gif"></p>
+        </div>
+      </div>
+      <div id="units"></div>
+    </div>
+    <div class="col-md-9">
     
 
+      
+       
+ 
+
+<div id="headlineTable">
+  
+  <div id="datatables">
+    
+    <a href="https://opendataenterprise.github.io/sdg-translations-demo-data/headline/11-6-2.csv" class="btn btn-primary btn-download" download="indicator_11-6-2.csv" tabindex="0" role="button"></a>
+    
+    <a href="https://opendataenterprise.github.io/sdg-translations-demo-data/data/11-6-2.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_11-6-2.csv' tabindex='0' role='button'></a>
+    
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption></caption>
+      <thead>
+        
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  <div id="datatableFooter">
+    
+    
+    
+    
+  </div>
+  
+</div>
       
 
       <section>
 
+        
+        <p class="async-loading" data-img="/sdg-translations-demo/assets/img/loading-small.gif"></p>
+        <div class="async-loaded" style="display:none">
+          <ul class="nav nav-tabs data-view" role="tablist">
+            <li role="presentation" class="nav-item active">
+              <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab"></a>
+            </li>
+            <li role="presentation" class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tableview" aria-controls="tableview" role="tab"></a>
+            </li>
+            <li role="presentation" class="nav-item map" style="display:none">
+              <a class="nav-link" data-toggle="tab" href="#mapview" aria-controls="mapview" role="tab"></a>
+            </li><li role="presentation" class="nav-item embedded-map">
+              <a class="nav-link" data-toggle="tab" href="#embeddedmapview" aria-controls="embeddedmapview" role="tab"></a>
+            </li></ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content data-view">
+            <div role="tabpanel" class="tab-pane active" id="chartview">
+              
+    
+    
+
+    <div id="dataset-size-warning" style="display:none">
+      <i class="fa fa-bolt"></i> 
+    </div>
+
+    
+    <div class="plot-container">
+        
+<canvas></canvas>
+    </div>
+    <div id="plotLegend"></div>
+
+    <div id="chartSelectionDownload"></div>
+
+
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tableview">
+              <div id="selectionsTable"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="mapview" class="map">
+              <div id="map">
+                <img src="/sdg-translations-demo/assets/img/loading.gif" alt="" />
+              </div>
+            </div>
+            
+            <div role="tabpanel" class="tab-pane" id="embeddedmapview" class="embedded-map">
+              
+            </div>
+            
+          </div>
+        </div>
         
 
         <!-- Nav tabs -->
@@ -274,7 +376,7 @@
         <th scope="row">Indicator available </th>
         <td>
           
-            
+            Annual mean levels of fine particulate matter (PM2.5 and PM10) in towns and cities (population weighted)
           
         </td>
         </tr>
@@ -298,7 +400,7 @@
         <th scope="row">Geographical coverage </th>
         <td>
           
-            
+            UK
           
         </td>
         </tr>
@@ -310,7 +412,7 @@
         <th scope="row">Unit of measurement </th>
         <td>
           
-            
+            Annual mean (ug/m3)
           
         </td>
         </tr>
@@ -322,7 +424,7 @@
         <th scope="row">Definitions </th>
         <td>
           
-            
+            The mean annual concentration of fine suspended particles of less than 2.5 microns in diameters (PM2.5) is a common measure of air pollution. The mean is a population-weighted average for urban population in a country, and is expressed in micrograms per cubic meter [µg/m3 ]. Air pollution consists of many pollutants, among other particulate matter. These particles are able to penetrate deeply into the respiratory tract and therefore constitute a risk for health by increasing mortality from respiratory infections and diseases, lung cancer, and selected cardiovascular diseases. Urban/rural data: while the data quality available for urban/rural population is generally good for high income countries, it can be relatively poor for some low- and middle income areas. Furthermore, the definition of urban/rural may greatly vary by country.
           
         </td>
         </tr>
@@ -334,7 +436,7 @@
         <th scope="row">Calculations </th>
         <td>
           
-            
+            The annual urban mean concentration of PM2.5 is estimated with improved modelling using data integration from satellite remote sensing, population estimates, topography and ground measurements (WHO, 2016a; Shaddick et al, 2016).
           
         </td>
         </tr>
@@ -705,6 +807,247 @@
 
 
 
+  <div class="row no-gutters">
+  
+   
+    
+    <div class="col-md-6">
+      
+      <table class="table table-hover">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            World Health Organisation (WHO)
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            Discontinuous
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      <tr>
+        <th scope="row">Earliest available data </th>
+        <td>
+          
+            2008
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      <tr>
+        <th scope="row">Geographical coverage </th>
+        <td>
+          
+            United Kingdom
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="http://apps.who.int/gho/data/view.main.AMBIENTCITY2016?lang=en" target="_blank">
+                Global Health Observatory data repository <span class="visuallyhidden"></span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+  
+      
+      <tr>
+        <th scope="row">Release date </th>
+        <td>
+          
+            15-05-2014
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      <tr>
+        <th scope="row">Next release </th>
+        <td>
+          
+            To be announced
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      <tr>
+        <th scope="row">Statistical classification </th>
+        <td>
+          
+            Non-Official
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      <tr>
+        <th scope="row">Contact details </th>
+        <td>
+          
+            
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      <tr>
+        <th scope="row">Other information </th>
+        <td>
+          
+            
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
+  </div>
+
 
           </div>
           
@@ -764,7 +1107,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 <script>
   var remoteDataBaseUrl = 'https://opendataenterprise.github.io/sdg-translations-demo-data';
 </script>
-<script src='/sdg-translations-demo/assets/js/sdg.js?v=20181127055836'></script>
+<script src='/sdg-translations-demo/assets/js/sdg.js?v=20181127133122'></script>
 <script>
 $(function() {
     if($('#indicatorData').length) {
